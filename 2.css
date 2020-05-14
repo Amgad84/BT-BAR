@@ -1,162 +1,6 @@
 @import 'compass/reset';
 @import 'compass/css3';
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
-@import "compass/css3";
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-html {
-  overflow-y: scroll;
-}
-body {
-  background: #c1bdba;
-  font-family: 'Titillium Web', sans-serif;
-}
-a {
-  text-decoration: none;
-  color: #1ab188;
-  transition: 0.5s ease;
-}
-a:hover {
-  color: #179b77;
-}
-.form2 {
-  background: rgba(19, 35, 47, 0.9);
-  padding: 40px;
-  max-width: 600px;
-  margin: 40px auto;
-  border-radius: 4px;
-  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
-}
-.tab-group {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 40px 0;
-}
-.tab-group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.tab-group li a {
-  display: block;
-  text-decoration: none;
-  padding: 15px;
-  background: rgba(160, 179, 176, 0.25);
-  color: #a0b3b0;
-  font-size: 20px;
-  float: left;
-  width: 50%;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.5s ease;
-}
-.tab-group li a:hover {
-  background: #179b77;
-  color: #ffffff;
-}
-.tab-group .active a {
-  background: #1ab188;
-  color: #ffffff;
-}
-.tab-content > div:last-child {
-  display: none;
-}
-h1 {
-  text-align: center;
-  color: #ffffff;
-  font-weight: 300;
-  margin: 0 0 40px;
-}
-label {
-  position: absolute;
-  transform: translateY(6px);
-  left: 13px;
-  color: rgba(255, 255, 255, 0.5);
-  transition: all 0.25s ease;
-  -webkit-backface-visibility: hidden;
-  pointer-events: none;
-  font-size: 22px;
-}
-label .req {
-  margin: 2px;
-  color: #1ab188;
-}
-label.active {
-  transform: translateY(50px);
-  left: 2px;
-  font-size: 14px;
-}
-label.active .req {
-  opacity: 0;
-}
-label.highlight {
-  color: #ffffff;
-}
-input, textarea {
-  font-size: 22px;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 5px 10px;
-  background: none;
-  background-image: none;
-  border: 1px solid #a0b3b0;
-  color: #ffffff;
-  border-radius: 0;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease;
-}
-input:focus, textarea:focus {
-  outline: 0;
-  border-color: #1ab188;
-}
-textarea {
-  border: 2px solid #a0b3b0;
-  resize: vertical;
-}
-.field-wrap {
-  position: relative;
-  margin-bottom: 40px;
-}
-.top-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.top-row > div {
-  float: left;
-  width: 48%;
-  margin-right: 4%;
-}
-.top-row > div:last-child {
-  margin: 0;
-}
-.button {
-  border: 0;
-  outline: none;
-  border-radius: 0;
-  padding: 15px 0;
-  font-size: 2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  background: #1ab188;
-  color: #ffffff;
-  transition: all 0.5s ease;
-  -webkit-appearance: none;
-}
-.button:hover, .button:focus {
-  background: #179b77;
-}
-.button-block {
-  display: block;
-  width: 100%;
-}
-.forgot {
-  margin-top: -20px;
-  text-align: right;
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -209,6 +53,7 @@ p {
 p span {
   display: block;
 }
+#hid{visibility: hidden;;}
 .container {
   z-index: 1;
   display: flex;
@@ -357,22 +202,22 @@ p span {
 .chart .bar.lightGray-face .face {
   background-color: rgba(145, 145, 145, 0.2);
 }
-.bar-0 .growing-bar {
+.bar-0 .growing-bar , div[id='sa0'] ~ .chart .growing-bar{
   width: 0%;
 }
-.bar-1 .growing-bar {
+.bar-1 .growing-bar , div[id='sa1'] ~ .chart .growing-bar{
   width: 1%;
 }
-.bar-2 .growing-bar {
+.bar-2 .growing-bar, div[id='sa2'] ~ .chart .growing-bar {
   width: 2%;
 }
-.bar-3 .growing-bar {
+.bar-3 .growing-bar , div[id='sa3'] ~ .chart .growing-bar{
   width: 3%;
 }
-.bar-4 .growing-bar {
+.bar-4 .growing-bar, div[id='sa4'] ~ .chart .growing-bar {
   width: 4%;
 }
-.bar-5 .growing-bar {
+.bar-5 .growing-bar , div[id='sa5'] ~ .chart .growing-bar{
   width: 5%;
 }
 .bar-6 .growing-bar {
@@ -387,127 +232,129 @@ p span {
 .bar-9 .growing-bar {
   width: 9%;
 }
-.bar-10 .growing-bar {
+.bar-10 .growing-bar, div[id='sa10'] ~ .chart .growing-bar{
   width: 10%;
 }
-.bar-11 .growing-bar {
+.bar-11 .growing-bar, div[id='sa11'] ~ .chart .growing-bar {
   width: 11%;
 }
-.bar-12 .growing-bar {
+.bar-12 .growing-bar , div[id='sa12'] ~ .chart .growing-bar{
   width: 12%;
 }
-.bar-13 .growing-bar {
+.bar-13 .growing-bar , div[id='sa13'] ~ .chart .growing-bar{
   width: 13%;
 }
-.bar-14 .growing-bar {
+.bar-14 .growing-bar, div[id='sa14'] ~ .chart .growing-bar {
   width: 14%;
 }
-.bar-15 .growing-bar {
+.bar-15 .growing-bar, div[id='sa15'] ~ .chart .growing-bar {
   width: 15%;
 }
-.bar-16 .growing-bar {
+.bar-16 .growing-bar , div[id='sa16'] ~ .chart .growing-bar{
   width: 16%;
 }
-.bar-17 .growing-bar {
+.bar-17 .growing-bar , div[id='sa17'] ~ .chart .growing-bar{
   width: 17%;
 }
-.bar-18 .growing-bar {
+.bar-18 .growing-bar , div[id='sa18'] ~ .chart .growing-bar{
   width: 18%;
 }
-.bar-19 .growing-bar {
+.bar-19 .growing-bar , div[id='sa19'] ~ .chart .growing-bar{
   width: 19%;
 }
-.bar-20 .growing-bar, input[id='exercise-2']:checked ~ .chart.grid .exercise .bar:nth-child(1) .growing-bar {
+.bar-20 .growing-bar , div[id='sa20'] ~ .chart .growing-bar{
   width: 20%;
 }
-.bar-21 .growing-bar {
+.bar-21 .growing-bar, div[id='sa21'] ~ .chart .growing-bar {
   width: 21%;
 }
-.bar-22 .growing-bar {
+.bar-22 .growing-bar , div[id='sa22'] ~ .chart .growing-bar{
   width: 22%;
 }
-.bar-23 .growing-bar {
+.bar-23 .growing-bar, div[id='sa23'] ~ .chart .growing-bar{
   width: 23%;
 }
-.bar-24 .growing-bar {
+.bar-24 .growing-bar, div[id='sa24'] ~ .chart .growing-bar {
   width: 24%;
 }
-.bar-25 .growing-bar, input[id='pos-0']:checked ~ .chart .growing-bar {
+.bar-25 .growing-bar, div[id='sa25'] ~ .chart .growing-bar {
   width: 25%;
 }
-.bar-26 .growing-bar {
+.bar-26 .growing-bar , div[id='sa26'] ~ .chart .growing-bar{
   width: 26%;
 }
-.bar-27 .growing-bar {
+.bar-27 .growing-bar , div[id='sa27'] ~ .chart .growing-bar{
   width: 27%;
 }
-.bar-28 .growing-bar {
+.bar-28 .growing-bar, div[id='sa28'] ~ .chart .growing-bar {
   width: 28%;
 }
-.bar-29 .growing-bar {
+.bar-29 .growing-bar , div[id='sa29'] ~ .chart .growing-bar{
   width: 29%;
 }
-.bar-30 .growing-bar {
+.bar-30 .growing-bar , div[id='sa30'] ~ .chart .growing-bar{
   width: 30%;
 }
-.bar-31 .growing-bar {
+.bar-31 .growing-bar, div[id='sa31'] ~ .chart .growing-bar {
   width: 31%;
 }
-.bar-32 .growing-bar {
+.bar-32 .growing-bar , div[id='sa32'] ~ .chart .growing-bar{
   width: 32%;
 }
-.bar-33 .growing-bar {
+.bar-33 .growing-bar , div[id='sa33'] ~ .chart .growing-bar{
   width: 33%;
 }
-.bar-34 .growing-bar {
+.bar-34 .growing-bar , div[id='sa34'] ~ .chart .growing-bar{
   width: 34%;
 }
-.bar-35 .growing-bar {
+.bar-35 .growing-bar , div[id='sa35'] ~ .chart .growing-bar{
   width: 35%;
 }
-.bar-36 .growing-bar {
+.bar-36 .growing-bar, div[id='sa36'] ~ .chart .growing-bar {
   width: 36%;
 }
-.bar-37 .growing-bar {
+.bar-37 .growing-bar , div[id='sa37'] ~ .chart .growing-bar{
   width: 37%;
 }
-.bar-38 .growing-bar {
+.bar-38 .growing-bar , div[id='sa38'] ~ .chart .growing-bar{
   width: 38%;
 }
-.bar-39 .growing-bar {
+.bar-39 .growing-bar , div[id='sa39'] ~ .chart .growing-bar{
   width: 39%;
 }
-.bar-40 .growing-bar {
+.bar-40 .growing-bar , div[id='sa40'] ~ .chart .growing-bar{
   width: 40%;
 }
-.bar-41 .growing-bar {
+.bar-41 .growing-bar , div[id='sa41'] ~ .chart .growing-bar{
   width: 41%;
 }
-.bar-42 .growing-bar {
+.bar-42 .growing-bar , div[id='sa42'] ~ .chart .growing-bar{
   width: 42%;
 }
-.bar-43 .growing-bar {
+.bar-43 .growing-bar , div[id='sa43'] ~ .chart .growing-bar{
   width: 43%;
 }
-.bar-44 .growing-bar {
+.bar-44 .growing-bar , div[id='sa44'] ~ .chart .growing-bar{
   width: 44%;
 }
-.bar-45 .growing-bar {
+.bar-45 .growing-bar , div[id='sa45'] ~ .chart .growing-bar{
   width: 45%;
 }
-.bar-46 .growing-bar {
+.bar-46 .growing-bar , div[id='sa46'] ~ .chart .growing-bar{
   width: 46%;
 }
-.bar-47 .growing-bar {
+.bar-47 .growing-bar , div[id='sa47'] ~ .chart .growing-bar{
   width: 47%;
 }
-.bar-48 .growing-bar {
+.bar-48 .growing-bar , div[id='sa48'] ~ .chart .growing-bar {
   width: 48%;
 }
-.bar-49 .growing-bar {
+.bar-49 .growing-bar , div[id='sa49'] ~ .chart .growing-bar{
   width: 49%;
 }
-.bar-50 .growing-bar, input[id='pos-1']:checked ~ .chart .growing-bar, input[id='exercise-2']:checked ~ .chart.grid .exercise .bar:nth-child(2) .growing-bar, input[id='exercise-4']:checked ~ .chart.grid .exercise .bar:nth-child(1) .growing-bar, input[id='exercise-4']:checked ~ .chart.grid .exercise .bar:nth-child(2) .growing-bar {
+
+/* , input[id='pos-1']:checked ~ .chart .growing-bar, input[id='exercise-2']:checked ~ .chart.grid .exercise .bar:nth-child(2) .growing-bar, input[id='exercise-4']:checked ~ .chart.grid .exercise .bar:nth-child(1) .growing-bar, input[id='exercise-4']:checked ~ .chart.grid .exercise .bar:nth-child(2) .growing-bar */
+.bar-50 .growing-bar, div[id='sa50'] ~ .chart .growing-bar {
   width: 50%;
 }
 .bar-51 .growing-bar {
@@ -567,7 +414,8 @@ p span {
 .bar-69 .growing-bar {
   width: 69%;
 }
-.bar-70 .growing-bar, input[id='exercise-3']:checked ~ .chart.grid .exercise .bar:nth-child(1) .growing-bar, input[id='exercise-3']:checked ~ .chart.grid .exercise .bar:nth-child(2) .growing-bar, input[id='exercise-3']:checked ~ .chart.grid .exercise .bar:nth-child(3) .growing-bar {
+/* , input[id='exercise-3']:checked ~ .chart.grid .exercise .bar:nth-child(1) .growing-bar, input[id='exercise-3']:checked ~ .chart.grid .exercise .bar:nth-child(2) .growing-bar, input[id='exercise-3']:checked ~ .chart.grid .exercise .bar:nth-child(3) .growing-bar */
+.bar-70 .growing-bar {
   width: 70%;
 }
 .bar-71 .growing-bar {
@@ -576,13 +424,13 @@ p span {
 .bar-72 .growing-bar {
   width: 72%;
 }
-.bar-73 .growing-bar {
+.bar-73 .growing-bar , div[id='sa73'] ~ .chart .growing-bar{
   width: 73%;
 }
 .bar-74 .growing-bar {
   width: 74%;
 }
-.bar-75 .growing-bar, input[id='pos-2']:checked ~ .chart .growing-bar {
+.bar-75 .growing-bar {
   width: 75%;
 }
 .bar-76 .growing-bar {
@@ -597,7 +445,8 @@ p span {
 .bar-79 .growing-bar {
   width: 79%;
 }
-.bar-80 .growing-bar, input[id='exercise-2']:checked ~ .chart.grid .exercise .bar:nth-child(3) .growing-bar {
+/* , input[id='exercise-2']:checked ~ .chart.grid .exercise .bar:nth-child(3) .growing-bar */
+.bar-80 .growing-bar {
   width: 80%;
 }
 .bar-81 .growing-bar {
@@ -627,7 +476,7 @@ p span {
 .bar-89 .growing-bar {
   width: 89%;
 }
-.bar-90 .growing-bar {
+.bar-90 .growing-bar , div[id='sa90'] ~ .chart .growing-bar{
   width: 90%;
 }
 .bar-91 .growing-bar {
@@ -657,7 +506,8 @@ p span {
 .bar-99 .growing-bar {
   width: 99%;
 }
-.bar-100 .growing-bar, input[id='pos-3']:checked ~ .chart .growing-bar, input[id='exercise-4']:checked ~ .chart.grid .exercise .bar:nth-child(3) .growing-bar {
+/* , input[id='pos-3']:checked ~ .chart .growing-bar, input[id='exercise-4']:checked ~ .chart.grid .exercise .bar:nth-child(3) .growing-bar */
+.bar-100 .growing-bar {
   width: 100%;
 }
 /*
@@ -714,9 +564,7 @@ label:last-child {
   margin-right: 0;
   border-radius: 0 0.2em 0.2em 0;
 }
-
-/* ستايل الزر */
-input[id='exercise-1']:checked ~ .actions label[for='lam'], input[id='exercise-2']:checked ~ .actions label[for='exercise-2'], input[id='exercise-3']:checked ~ .actions label[for='exercise-3'], input[id='exercise-4']:checked ~ .actions label[for='exercise-4'], input[id='pos-0']:checked ~ .actions label[for='pos-0'], input[id='pos-1']:checked ~ .actions label[for='pos-1'], input[id='pos-2']:checked ~ .actions label[for='pos-2'], input[id='pos-3']:checked ~ .actions label[for='pos-3'], input[id='red']:checked ~ .actions label[for='red'], input[id='cyan']:checked ~ .actions label[for='cyan'], input[id='lime']:checked ~ .actions label[for='lime'] {
+input[id='exercise-1']:checked ~ .actions label[for='exercise-1'], input[id='exercise-2']:checked ~ .actions label[for='exercise-2'], input[id='exercise-3']:checked ~ .actions label[for='exercise-3'], input[id='exercise-4']:checked ~ .actions label[for='exercise-4'], input[id='pos-0']:checked ~ .actions label[for='pos-0'], input[id='pos-1']:checked ~ .actions label[for='pos-1'], input[id='pos-2']:checked ~ .actions label[for='pos-2'], input[id='pos-3']:checked ~ .actions label[for='pos-3'], input[id='red']:checked ~ .actions label[for='red'], input[id='cyan']:checked ~ .actions label[for='cyan'], input[id='lime']:checked ~ .actions label[for='lime'] {
   color: #76c900;
   border: 1px solid #031523;
   background-color: #0a4069;
