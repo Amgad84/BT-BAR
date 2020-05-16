@@ -1,7 +1,7 @@
 @import 'compass/reset';
 @import 'compass/css3';
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
-@import url(//fonts.googleapis.com/css?family=Oswald:400);
+/* @import url(//fonts.googleapis.com/css?family=Oswald:400); */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -11,9 +11,7 @@ body {
   color: #444;
   background: #222428;
   /* font-family: "Oswald", sans-serif; */
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-  /* position: relative; */
+  
 }
 /* CSS reset */
 *,
@@ -26,7 +24,11 @@ body {
 
 html { font-size: 62.5%; }
 
-
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+}
 
 /* Typography =======================*/
 
@@ -669,16 +671,16 @@ p span {
 .bar-5 .growing-bar , div[id='sa5'] ~ .chart .growing-bar{
   width: 5%;
 }
-.bar-6 .growing-bar {
+.bar-6 .growing-bar , div[id='sa6'] ~ .chart .growing-bar{
   width: 6%;
 }
-.bar-7 .growing-bar {
+.bar-7 .growing-bar, div[id='sa7'] ~ .chart .growing-bar {
   width: 7%;
 }
-.bar-8 .growing-bar {
+.bar-8 .growing-bar, div[id='sa8'] ~ .chart .growing-bar {
   width: 8%;
 }
-.bar-9 .growing-bar {
+.bar-9 .growing-bar, div[id='sa9'] ~ .chart .growing-bar {
   width: 9%;
 }
 .bar-10 .growing-bar, div[id='sa10'] ~ .chart .growing-bar{
@@ -806,157 +808,157 @@ p span {
 .bar-50 .growing-bar, div[id='sa50'] ~ .chart .growing-bar {
   width: 50%;
 }
-.bar-51 .growing-bar {
+.bar-51 .growing-bar , div[id='sa51'] ~ .chart .growing-bar{
   width: 51%;
 }
-.bar-52 .growing-bar {
+.bar-52 .growing-bar, div[id='sa52'] ~ .chart .growing-bar {
   width: 52%;
 }
-.bar-53 .growing-bar {
+.bar-53 .growing-bar, div[id='sa53'] ~ .chart .growing-bar {
   width: 53%;
 }
-.bar-54 .growing-bar {
+.bar-54 .growing-bar , div[id='sa54'] ~ .chart .growing-bar{
   width: 54%;
 }
-.bar-55 .growing-bar {
+.bar-55 .growing-bar , div[id='sa55'] ~ .chart .growing-bar{
   width: 55%;
 }
-.bar-56 .growing-bar {
+.bar-56 .growing-bar , div[id='sa56'] ~ .chart .growing-bar{
   width: 56%;
 }
-.bar-57 .growing-bar {
+.bar-57 .growing-bar , div[id='sa57'] ~ .chart .growing-bar{
   width: 57%;
 }
-.bar-58 .growing-bar {
+.bar-58 .growing-bar , div[id='sa58'] ~ .chart .growing-bar{
   width: 58%;
 }
-.bar-59 .growing-bar {
+.bar-59 .growing-bar , div[id='sa59'] ~ .chart .growing-bar{
   width: 59%;
 }
-.bar-60 .growing-bar {
+.bar-60 .growing-bar , div[id='sa60'] ~ .chart .growing-bar{
   width: 60%;
 }
-.bar-61 .growing-bar {
+.bar-61 .growing-bar , div[id='sa61'] ~ .chart .growing-bar{
   width: 61%;
 }
-.bar-62 .growing-bar {
+.bar-62 .growing-bar , div[id='sa62'] ~ .chart .growing-bar{
   width: 62%;
 }
-.bar-63 .growing-bar {
+.bar-63 .growing-bar , div[id='sa63'] ~ .chart .growing-ba{
   width: 63%;
 }
-.bar-64 .growing-bar {
+.bar-64 .growing-bar , div[id='sa64'] ~ .chart .growing-ba{
   width: 64%;
 }
-.bar-65 .growing-bar {
+.bar-65 .growing-bar , div[id='sa65'] ~ .chart .growing-bar{
   width: 65%;
 }
-.bar-66 .growing-bar {
+.bar-66 .growing-bar , div[id='sa66'] ~ .chart .growing-bar{
   width: 66%;
 }
-.bar-67 .growing-bar {
+.bar-67 .growing-bar , div[id='sa67'] ~ .chart .growing-bar{
   width: 67%;
 }
-.bar-68 .growing-bar {
+.bar-68 .growing-bar , div[id='sa68'] ~ .chart .growing-bar{
   width: 68%;
 }
-.bar-69 .growing-bar {
+.bar-69 .growing-bar , div[id='sa69'] ~ .chart .growing-bar{
   width: 69%;
 }
 /* , input[id='exercise-3']:checked ~ .chart.grid .exercise .bar:nth-child(1) .growing-bar, input[id='exercise-3']:checked ~ .chart.grid .exercise .bar:nth-child(2) .growing-bar, input[id='exercise-3']:checked ~ .chart.grid .exercise .bar:nth-child(3) .growing-bar */
-.bar-70 .growing-bar {
+.bar-70 .growing-bar , div[id='sa70'] ~ .chart .growing-bar{
   width: 70%;
 }
-.bar-71 .growing-bar {
+.bar-71 .growing-bar , div[id='sa71'] ~ .chart .growing-bar{
   width: 71%;
 }
-.bar-72 .growing-bar {
+.bar-72 .growing-bar , div[id='sa72'] ~ .chart .growing-bar {
   width: 72%;
 }
 .bar-73 .growing-bar , div[id='sa73'] ~ .chart .growing-bar{
   width: 73%;
 }
-.bar-74 .growing-bar {
+.bar-74 .growing-bar , div[id='sa74'] ~ .chart .growing-bar{
   width: 74%;
 }
-.bar-75 .growing-bar {
+.bar-75 .growing-bar, div[id='sa75'] ~ .chart .growing-bar {
   width: 75%;
 }
-.bar-76 .growing-bar {
+.bar-76 .growing-bar , div[id='sa76'] ~ .chart .growing-bar{
   width: 76%;
 }
-.bar-77 .growing-bar {
+.bar-77 .growing-bar , div[id='sa77'] ~ .chart .growing-bar{
   width: 77%;
 }
-.bar-78 .growing-bar {
+.bar-78 .growing-bar , div[id='sa78'] ~ .chart .growing-bar{
   width: 78%;
 }
-.bar-79 .growing-bar {
+.bar-79 .growing-bar , div[id='sa79'] ~ .chart .growing-bar {
   width: 79%;
 }
 /* , input[id='exercise-2']:checked ~ .chart.grid .exercise .bar:nth-child(3) .growing-bar */
-.bar-80 .growing-bar {
+.bar-80 .growing-bar , div[id='sa80'] ~ .chart .growing-bar{
   width: 80%;
 }
-.bar-81 .growing-bar {
+.bar-81 .growing-bar, div[id='sa81'] ~ .chart .growing-bar {
   width: 81%;
 }
-.bar-82 .growing-bar {
+.bar-82 .growing-bar, div[id='sa82'] ~ .chart .growing-bar{
   width: 82%;
 }
-.bar-83 .growing-bar {
+.bar-83 .growing-bar , div[id='sa83'] ~ .chart .growing-bar{
   width: 83%;
 }
-.bar-84 .growing-bar {
+.bar-84 .growing-bar , div[id='sa84'] ~ .chart .growing-bar {
   width: 84%;
 }
-.bar-85 .growing-bar {
+.bar-85 .growing-bar , div[id='sa85'] ~ .chart .growing-bar{
   width: 85%;
 }
-.bar-86 .growing-bar {
+.bar-86 .growing-bar , div[id='sa86'] ~ .chart .growing-bar{
   width: 86%;
 }
-.bar-87 .growing-bar {
+.bar-87 .growing-bar , div[id='sa87'] ~ .chart .growing-bar{
   width: 87%;
 }
-.bar-88 .growing-bar {
+.bar-88 .growing-bar , div[id='sa88'] ~ .chart .growing-bar{
   width: 88%;
 }
-.bar-89 .growing-bar {
+.bar-89 .growing-bar , div[id='sa90'] ~ .chart .growing-bar{
   width: 89%;
 }
 .bar-90 .growing-bar , div[id='sa90'] ~ .chart .growing-bar{
   width: 90%;
 }
-.bar-91 .growing-bar {
+.bar-91 .growing-bar , div[id='sa91'] ~ .chart .growing-bar{
   width: 91%;
 }
-.bar-92 .growing-bar {
+.bar-92 .growing-bar , div[id='sa92'] ~ .chart .growing-bar{
   width: 92%;
 }
-.bar-93 .growing-bar {
+.bar-93 .growing-bar , div[id='sa93'] ~ .chart .growing-bar{
   width: 93%;
 }
-.bar-94 .growing-bar {
+.bar-94 .growing-bar , div[id='sa94'] ~ .chart .growing-bar{
   width: 94%;
 }
-.bar-95 .growing-bar {
+.bar-95 .growing-bar , div[id='sa95'] ~ .chart .growing-bar{
   width: 95%;
 }
-.bar-96 .growing-bar {
+.bar-96 .growing-bar , div[id='sa96'] ~ .chart .growing-bar{
   width: 96%;
 }
-.bar-97 .growing-bar {
+.bar-97 .growing-bar , div[id='sa97'] ~ .chart .growing-bar{
   width: 97%;
 }
-.bar-98 .growing-bar {
+.bar-98 .growing-bar , div[id='sa98'] ~ .chart .growing-bar{
   width: 98%;
 }
-.bar-99 .growing-bar {
+.bar-99 .growing-bar, div[id='sa99'] ~ .chart .growing-bar {
   width: 99%;
 }
 /* , input[id='pos-3']:checked ~ .chart .growing-bar, input[id='exercise-4']:checked ~ .chart.grid .exercise .bar:nth-child(3) .growing-bar */
-.bar-100 .growing-bar {
+.bar-100 .growing-bar ,  div[id='sa100'] ~ .chart .growing-bar{
   width: 100%;
 }
 /*
